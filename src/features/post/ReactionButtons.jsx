@@ -18,7 +18,7 @@ const ReactionButtons = ({ post }) => {
     <div className="flex flex-wrap justify-between">
       {Object.entries(reactionEmoji).map(([name, emoji]) => (
         <button
-          class="btn btn-circle btn-sm btn-secondary "
+          className="btn btn-circle btn-sm btn-secondary "
           key={name}
           type="button"
           onClick={() =>

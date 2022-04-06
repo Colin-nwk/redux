@@ -32,8 +32,8 @@ const AddPostForm = () => {
 
   return (
     <>
-      <section className="mt-3">
-        <div className="card w-96 bg-base-100 shadow-md p-5">
+      <section className="my-10">
+        <div className="card w-96 bg-base-100 shadow-md p-6">
           <form className="w-full">
             <h3 className="text-3xl text-center">Add New Post</h3>
             <div className="grid grid-cols-1 gap-6 mt-4 w-full ">

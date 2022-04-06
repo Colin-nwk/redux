@@ -4,12 +4,12 @@ import AddPostForm from "./features/post/AddPostForm";
 function App() {
   return (
     <>
-      <div classNameName="hero min-h-screen bg-base-200 mx-auto">
+      <div className="hero min-h-screen bg-base-200 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-6 gap-2 place-content-center mt-3">
           <div className="col-span-4 place-content-center">
             <PostsList />
           </div>
-          <div className="">
+          <div className="flex justify-center md:justify-start">
             <AddPostForm />
           </div>
         </div>
