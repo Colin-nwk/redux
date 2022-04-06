@@ -4,6 +4,7 @@ import { selectAllPosts } from "./postSlice";
 
 import PostAuthor from "./PostAuthor";
 import TimeAgo from "./TimeAgo";
+import ReactionButtons from "./ReactionButtons";
 
 const PostsList = () => {
   //   const posts = useSelector((state) => state.posts);
@@ -20,12 +21,13 @@ const PostsList = () => {
           <div className="card w-64 bg-base-100 shadow-xl" key={post.id}>
             <div className="card-body">
               <h2 className="card-title">{post?.title}</h2>
-              <p className="text-justify">{post?.content.substring(0, 100)}</p>
+              <p className="text-left">{post?.content.substring(0, 100)}</p>
               <PostAuthor userId={post.userId} />
               <TimeAgo timestamp={post.date} />
               <div className="card-actions justify-end">
                 <button className="btn btn-primary">View</button>
               </div>
+              <ReactionButtons post={post} />
             </div>
           </div>
         ))}
